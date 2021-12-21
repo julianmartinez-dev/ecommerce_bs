@@ -1,0 +1,88 @@
+:root{
+    --bs-blue: #037cb0;
+    --bs-green: #8cbc00;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+@media(min-width: 768px) {
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+}
+
+
+/** Reescribir colores */
+.text-primary,
+.nombre-sitio{
+    color: var(--bs-blue) !important;
+}
+.bg-primary,
+.btn-primary{
+    background-color: var(--bs-blue) !important;
+}
+.btn-success{
+    background-color: var(--bs-green)!important;
+}
+
+
+.hero{
+    background-image: url(../img/principal.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@media(min-width: 768px) {
+    .hero{
+        height: 50rem;
+    }
+}
+
+/**PRODUCTOS**/
+@media(min-width: 768px) {
+    .producto img{
+        height: 50rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.categoria img{
+    transition-property: transform ;
+    transition-duration: 300ms;
+}
+.categoria img:hover{
+    transform: scale(1.2);
+}
+
+.form-control{
+    padding: 1rem;
+    font-size: 1.6rem;
+}
